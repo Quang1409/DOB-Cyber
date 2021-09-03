@@ -23,7 +23,7 @@ app.get('/all',async function(req,res){
     let client= await MongoClient.connect(url);
     let dbo = client.db("DOBCyber");
     let results = await dbo.collection("product").find({}).toArray();
-    res.render('indexadmin',{products:results});
+    res.render('indexadmin',{product:results});
 })
 
 app.get('/insert',async function(req,res){

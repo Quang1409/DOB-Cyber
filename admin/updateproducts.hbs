@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+    <h1>Update product</h1>
+    <form action="/doUpdate" method="post">
+        Name <input class="form-control" type="text" name="txtName" id="" value="{{{DOBCyber.name}}}">
+        <br>
+        Price <input class="form-control" type="text" name="txtPrice" id="" value="{{{DOBCyber.price}}}">
+        <br>
+        Amount <input class="form-control" type="text" name="txtAmount" id="" value="{{{DOBCyber.amount}}}">
+        <br>
+        Description <input class="form-control" type="text" name="txtDescription" id="" value="{{{DOBVyber.description}}}">
+
+        <input type="submit" value="Update">
+        <input type="hidden" name="id" value="{{{DOBCyber._id}}}">
+    </form>
+</body>
+</html>

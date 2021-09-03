@@ -1,0 +1,354 @@
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: bold;
+	vertical-align: baseline;
+}
+* {
+	box-sizing:border-box;
+}
+body{
+	background-image: url(
+		https://i.pinimg.com/originals/1f/0b/fc/1f0bfc20c382a56fd0146e47f982b5a0.jpg
+	);
+	background-attachment: fixed;
+}
+
+#form{
+	float: left;
+	width: 45%;
+	margin-top: 10px;
+
+}
+.main_wrapper{
+	width: 100%;
+	height: auto; 
+	margin: auto;
+	
+	
+}
+.header_wrapper{
+	/* width: fit-content; */
+	height: 55px;
+	/* padding-left: 100px; */
+	/* display: inline-block; */
+	/* margin-left: 28%; */
+
+	
+}
+.header_logo{
+	float: left;
+	width: 150px;
+	padding: 0px;
+}
+
+#form input{
+	padding: 8px;
+}
+#form input[type=text]{
+	width: 75%;
+	margin-left: 30px;
+}
+div#form {
+	margin-left: 380px;
+	margin-right: 140px;
+}
+
+.cart{
+	float: left;
+	margin: 5px 10px 0px 15px ;
+	cursor: pointer;
+	height: 35px;
+	padding-top: 7px;
+	position: relative;
+	top: 5px;
+	right: 20px;
+	width: 60px;
+	text-align:center;
+	z-index: 1000;
+}
+.cart ul{
+	padding: 0px;
+	margin: 0px;
+	list-style: none;
+	position: relative;
+	width: auto;
+	z-index: 1;
+}
+.cart .noti_cart_number{
+	background:red;
+	color:white;
+	position: absolute;
+	top: -10px;
+	left:35px;
+	padding: 1px 3px 1px 3px;
+}
+.register_login{
+	float: left;
+	width: 280px;
+	margin-top: 10px;
+	margin-left: 5px;
+}
+.register_login a{
+	text-decoration: none;
+}
+.register{
+	position: relative;
+	top: .3px;
+	float: left;
+	right: 15px;
+	height: 35px;
+	line-height: 35px;
+	padding: 0px 10px 0px 10px;
+	margin: 0px 0px 0px 7px;
+	color:white;
+	cursor: pointer;
+	position: relative;
+	display: inline;
+	background:rgba(0, 144, 155, 0.9);
+	border: 1px solid black;
+	border-radius:2px;
+}
+.login{
+	position: relative;
+	top: .3px;
+	float: left;
+	right: 30px;
+	height: 35px;
+	line-height: 35px;
+	padding: 0px 10px 0px 10px;
+	margin: 0px;
+	color: gray;
+	cursor: pointer;
+	position: relative;
+	display: inline;
+	border: 1px solid black;
+	border-radius:1.5px;
+}
+.login a{
+	color:gray;
+}
+.menu_bar{
+	width: 100%;
+	height: 50px;
+	
+	/* background: #00F25B; */
+}
+
+.menu_bar a{
+	color: White;
+}
+#menu{
+	padding: 0px;
+	margin-left: 27%;
+	line-height: 40px;
+	float: left;
+}
+
+#menu li{
+	list-style: none;
+	display: inline;
+
+}
+#menu a{
+	text-decoration: none;
+	padding: 8px;
+	margin: 5px;
+	font-size:18px;
+}
+#menu a:hover{
+	color: orange;
+	font-weight: bolder;
+	text-decoration: underline;
+}
+
+.content_wrapper{
+	width: 100%;
+	margin: auto;
+	background:orange;
+}
+#sidebar{
+	width: 200px;
+	/* background:gray; */
+	float: left;
+	height: auto;
+}
+#sidebar_title{
+	/* background:white; */
+	color: rgb(235, 28, 28);
+	font-size:22px;
+	font-family: arial;
+	padding: 10px;
+	text-align: center;
+}
+#infor{
+	width: 200px;
+	/* background:gray; */
+	float: right;
+	
+	height: auto;
+}
+#infor_title{
+	/* background:white; */
+	color: rgb(235, 28, 28);
+	font-size:22px;
+	font-family: arial;
+	padding: 10px;
+	text-align: center;
+}
+#cats{
+	text-align: center;
+}
+#cats li{
+	list-style: none;
+	margin: 5px;
+
+}
+#cats a{
+	color: white;
+	padding: 10px;
+	margin: 5px;
+	text-align: center;
+	font-size:20px;
+	text-decoration: none;
+	font-family: Comic Sans Ms;
+}
+#cats a:hover{
+	color:orange;
+	font-weight:bolder;
+	text-decoration: underline;
+}
+
+#content_area{ 
+	/* width: 83.2%; */
+	 /* width: 80%; */
+	/* float: right; */
+	background: #d1cfcb;
+}
+
+#content_area1{
+	float: right;
+	margin-right: 22%;
+	/* width: auto; */
+	height: 460px;
+	background: #d1cfcb;
+
+}
+#product_box{
+	width: 80%;
+	text-align: center;
+	margin-right: 0px;
+	float: right;
+	margin-bottom: 100px;
+	clear: left;
+	background: #d1cfcb;
+}
+
+article{
+	float: left;
+	width: 80%;
+	height: 460px; 
+	overflow: auto;
+	background-color: #d1cfcb;
+
+}
+#check{
+	width: 950px;
+	/* height: 500px; */
+}
+#single_product{
+	float: left;
+	margin-left: 30px;
+	padding: 10px;
+}
+#single_product img{
+	border: 2px solid black;
+}
+.shopping_cart_container{
+  background:white;
+  border:0.01px solid rgba(0,0,0,0.8px);
+  padding:15px;
+}
+.shopping_cart_container table img{
+  width:80px;
+  height:60px;
+  padding: 0 5px 0 10px;
+}
+.shopping_cart_container input[type=submit],.shopping_cart_container button{
+  background:rgba(27, 175, 224,1);
+  color:white;
+  padding:5px 10px;
+  border:0.01px solid rgba(27, 175, 224,1);
+}
+.shopping_cart_container input[type=submit]:hover,.shopping_cart_container button:hover{
+  background:rgba(27, 175, 224,0.8);
+}
+.shopping_cart_container button a{
+  text-decoration:none;color:white;
+}
+#shopping_cart{
+  background: rgba(27, 224, 136,1);
+
+}
+.login_box, .register_box{
+   width:100%;
+   float:left;
+   padding:15px;
+   background:white;
+}
+.login_box input[type=text], .login_box input[type=password],.register_box input[type=text], .register_box input[type=password]{
+   width:60%;
+   padding: 3px 10px;
+   margin: 5px 0;
+}
+.login_box input[type=submit], .register_box input[type=submit]{
+   padding:10px 15px;
+   background: rgba(28, 130, 199,0.9);
+   border:0.01px solid rgba(28, 130, 199,0.8);
+   color:white;
+}
+.register_box select{
+   width:40%;
+   padding:3px 10px;
+   margin:5px 0;
+}
+.register_box input[type=file]{
+   margin:5px 0;
+}
+.user_container{
+	width: 100%;
+	float: left;
+	padding: 20px;
+}
+.user_content{
+	width: 73%;
+	float: left;
+
+}
+
+.user_sidebar{
+	width: 25%;
+	float: left;
+	background:white;
+}

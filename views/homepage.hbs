@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="https://itexpress.vn/API/files/it.snow.js"></script>
+	<title>Home Page</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" media="all" href="style/style1.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<script src="js/jquery-3.4.1.js"></script>
+</head>
+<!---main container start here--->
+<body>
+	
+	<div class="main_wrapper">
+	<img src="images/banner.jpg" width="100%">
+		<div class="header_wrapper">
+		
+		<div id="form">
+			<form method="get" action="results.php" enctype="multipart/form-data">
+				<input type="text" name="user_query" placeholder="Search a product">
+				<input type="submit" name="search" value="Search">
+			</form>
+		</div>
+		<div class="cart">
+			<ul>
+				<li class="dropdown_header_cart">
+					<div id="notification_total_cart" class="shopping_cart">
+						<a href="cart.php"><i class="material-icons" id="cart_icon">shopping_cart</i></a>
+						<div class="noti_cart_number">
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div> 
+
+  <div class="register_login">
+  <div class="login"><a href="index.php?action=login">Login</a></div>
+  <div class="login"><a href="index.php?action=logout">Logout</a></div>
+  <div class="register"><a href="register.php">Register</a></div>
+  </div><!-- /.register_login --> 
+  
+  <div id="profile">
+    
+	<ul>
+	  <li class="dropdown_header">
+	   <a>
+	   
+	    <span><img src="upload-files/<?php echo $data_user['image']; ?>"></span> 
+
+	   <span><img src="images/profile-icon.png"></span>
+	 
+	   </a>
+	   
+	   <ul class="dropdown_menu_header">
+	     <li><a href="my_account.php?action=edit_account">Account Setting</a></li>
+		 <li><a href="logout.php">Logout</a></li>
+	   </ul>
+	   
+	  </li>
+	</ul>
+  </div>
+  
+  </div><!-- /.header_wrapper --> 
+	  
+	   
+</body>
+</html>

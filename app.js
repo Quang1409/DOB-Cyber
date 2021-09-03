@@ -56,12 +56,12 @@ app.get('/edit',async (req,res)=>{
     let client = await MongoClient.connect(url);
     let dbo = client.db("DOBCyber");
     let results = await dbo.collection("product").findOne({_id : ObjectID(id)});
-    res.render('updateproducts', {ProductDB:results});
+    res.render('updateproducts', {DOBCyber:results});
 })
 app.post('/doUpdate', async (req, res)=>{
     let id =req.body.id;
-    let name = req.body.txtName;
-    let price = req.body.txtPrice;
+    let name = req.body.txtNames;
+    let price = req.body.txtPrices;
     let amount = req.body.txtAmount;
     let description = req.body.txtDescription;
 
@@ -73,7 +73,7 @@ app.post('/doUpdate', async (req, res)=>{
     let dbo = client.db("DOBCyber");
     await dbo.collection("product").updateOne(condition,newValue)
 
-    res.redirect('index');
+    res.redirect('/all');
 })
 
 app.get('/delete',async function(req,res){

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Page</title>
+    <link rel="stylesheet" href="insert.css">
+</head>
+
+<body>
+    <div class="form">  
+        <form action="doInsert" method="POST">
+            
+            <h1>Add New Product</h1>
+            
+            <div class="menu">
+                <p><span>Name:</span> <input type="text" name="txtName" style="width: 400px" ></p>
+                <p><span>Price:</span> <input type="text" name="txtPrice" style="width: 400px" ></p>
+                {{errorMsg}}
+                <p><span>Amount:</span> <input type="text" name="txtAmount" style="width: 400px"></p>
+                <p><span>Description:</span><textarea name="txtDescription" id="" cols="21" rows="8" style="width: 400px"></textarea></p>
+                
+            </div>
+            <p class="btn-cr"><input type="submit" id="btn" value="Add"></p>
+        </form>
+    </div>
+</body>
+
+</html>

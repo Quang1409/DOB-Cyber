@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home Page</title>
+<link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="/css/font-awesome-4.7.0/css/font-awesome.min.css">
+<style>
+    body {
+            background-image: url(https://img1.kienthucvui.vn/uploads/2021/01/09/hinh-nen-powerpoint-don-gian_042247746.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+    }
+    div{
+        margin-left: 20%;
+        border-width: 15px;
+    }
+    h1{
+        margin-left: 30%;
+    }
+    table{
+        height: inherit;
+        width: 80%;
+    }
+ 
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>List of Product</h1>
+<table class="styleTable" border="1">
+    <tr>
+        
+        <th class="name">Name of Product</th> 
+        <th class="id">Price</th>
+        <th class="id">Amount</th>
+        <th class="name">Description</th>
+        <th></th>
+        
+    </tr>
+    <tr>
+        <a style="margin-left: 33%;" class="btn_index" href="/insert"><input type="submit" id="btn" value="Add New Product"></a> 
+    </tr>
+    {{#each products}} 
+    <tr>
+        
+            
+        <td class="name">{{name}}</td>
+        <td class="id">{{price}}</td>
+        <td class="id">{{amount}}</td>
+        <td class="name">{{description}}</td>
+        <td class="btn">
+        <a class="btn_index" href="/delete?id={{_id}}"><input type="submit" id="btn" value="Delete"></a>
+        
+        </td> 
+    </tr>  
+
+
+        {{/each}}
+</table>
+</div>
+</body>
+</html>
